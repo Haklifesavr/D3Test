@@ -1,0 +1,64 @@
+{
+    "type": "TREEMAP",
+    "data": [
+        [
+            "Label",
+            "Parent",
+            "Data",
+            "Data (color)"
+        ],
+        [
+            "Expense Categories",
+            null,
+            0,
+            0
+        ],
+        [
+            "Rent Payment £9,500.00",
+            "Expense Categories",
+            9500,
+            0
+        ],
+        [
+            "Salary £8,379.21",
+            "Expense Categories",
+            8379.21,
+            -1
+        ],
+        [
+            "Contractor £5,056.00",
+            "Expense Categories",
+            5056,
+            -2
+        ],
+        [
+            "Others Expense / Unclassified £2,841.23",
+            "Expense Categories",
+            2841.23,
+            -3
+        ],
+        [
+            "Other £4,157.89",
+            "Expense Categories",
+            4157.889999999999,
+            -4
+        ]
+    ],
+    "options": {
+        "minColor": "#f0e442",
+        "maxColor": "#0072b2",
+        "headerHeight": 24,
+        "fontColor": "black",
+        "fontSize": "20",
+        "fontFamily": "Roboto,Helvetica,Arial,sans-serif",
+        "fontWeight": "bold",
+        "eventsConfig": {
+            "highlight": [
+                null
+            ],
+            "drilldown": [
+                null
+            ]
+        }
+    }
+}
