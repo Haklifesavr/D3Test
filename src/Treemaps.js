@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
 
-export default function Treechart({ data, width, height }) {
+export default function Treemaps({ data, width, height }) {
   const svgRef = useRef(null);
   const fontSize = 1;
 
@@ -73,21 +73,7 @@ export default function Treechart({ data, width, height }) {
       .append('rect')
       .attr('width', (d) => d.x1 - d.x0)
       .attr('height', (d) => d.y1 - d.y0)
-        .attr('fill', (category) => {
-        let priority = category['data']['priority']
-        if(priority === 0){
-            return '#0071b2'
-        }else if(priority === -1){
-            return '#78acc7'
-        }else if(priority === -2){
-            return '#efe6dc'
-        }else if(priority === -3){
-            return '#f0e442'
-        }else if(priority === -4){
-            return '#f0e58f'
-        }
-        })
-    //   .attr('fill', (d) => colorScale(d.data.category));
+      .attr('fill', (d) => d.data.color);
 
       nodes.append("title").text((d) => `${d.data.name}`);
   
