@@ -48,7 +48,8 @@ export default function Treechart({ data, width, height }) {
   function renderTreechart() {
     const svg = d3.select(svgRef.current);
 
-    svg.attr('width', width).attr('height', height);
+    // svg.attr('width', width).attr('height', height);
+    svg.attr('viewBox', `0 0 ${width} ${height}`);
 
     const root = d3
       .hierarchy(data)
@@ -65,7 +66,7 @@ export default function Treechart({ data, width, height }) {
       .on("mouseover", function(){return d3.select(this).style("opacity", 0.7);})
       .on("mouseout", function(){return d3.select(this).style("opacity", 1);});
 
-    const fader = (color) => d3.interpolateRgb(color, '#fff')(0.3);
+    // const fader = (color) => d3.interpolateRgb(color, '#fff')(0.3);
     // const colorScale = d3.scaleOrdinal(d3.schemeCategory10.map(fader));
 
     nodes
