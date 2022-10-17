@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 // import gdata from './gdata.js'
-import Treemaps from './Treemaps';
+import Treemaps from 'Treemaps';
 import * as d3 from 'd3'
 
 function App() {
